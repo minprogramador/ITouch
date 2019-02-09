@@ -7,8 +7,8 @@ class Cpf {
 	public static function main($request, $response) {
 		global $app;
 		$container = $app->getContainer();
-		$container->logger->addInfo("Itouch\Cpf::main linha 13");
-		$data = array('pagina' => 'consultar cpf');
+		$container->logger->Info("consulta cpf main");
+		$data = array('pagina' => 'consultar cpf main');
 
 		return $response->withJson($data);
 	}
@@ -18,8 +18,8 @@ class Cpf {
 		global $app;
 
 		$container = $app->getContainer();
-		$container->logger->addInfo("Itouch\Cpf::run linha 21", $args);
-		$data = array('pagina' => 'consultar cpf get', 'cpf' => $cpf);
+		$container->logger->info("consultar cpf");
+		$data = array('pagina' => 'consultar cpf', 'cpf' => $cpf);
 
 		return $response->withJson($data);
 	}

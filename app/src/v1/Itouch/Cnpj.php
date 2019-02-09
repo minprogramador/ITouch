@@ -21,7 +21,7 @@
 			global $app;
 
 			$container = $app->getContainer();
-			$container->logger->addInfo("Itouch\Cnpj::run linha 24", $args);
+			$container->logger->addInfo("Itouch\Cnpj::run linha 24");
 			$data = array('pagina' => 'consultar cnpj get', 'cnpj' => $cnpj);
 			
 			return $response->withJson($data);

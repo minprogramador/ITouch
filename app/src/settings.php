@@ -12,7 +12,7 @@ return [
         // Monolog settings
         'logger' => [
             'name' => 'Itouch',
-            'path' => isset($_ENV['docker']) ? 'php://stdout' : __DIR__ . '/../logs/app.log',
+            'path' => isset($_ENV['docker']) ? 'php://stdout' : __DIR__ . '/../logs/app_'. date("Y-m-d").'.log',
             'level' => \Monolog\Logger::DEBUG,
         ],
     ],
