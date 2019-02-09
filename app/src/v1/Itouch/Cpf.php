@@ -13,6 +13,7 @@ class Cpf {
 		return $response->withJson($data);
 	}
 
+	//consultar cpf direto e mocar os dados aqui.
 	public static function run($request, $response, $args) {
 		$cpf = $args['cpf'];
 		global $app;

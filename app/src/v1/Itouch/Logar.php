@@ -15,4 +15,7 @@ class Logar {
 
 		return $response->withJson($data);
 	}
+	
+	//funcao para logar
+	
 }

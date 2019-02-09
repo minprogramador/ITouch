@@ -15,4 +15,10 @@ class Check {
 
 		return $response->withJson($data);
 	}
+	
+	//funcao check cookie
+	
 }
+
+
+

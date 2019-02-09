@@ -15,7 +15,8 @@
 
 			return $response->withJson($data);
 		}
-
+		
+		//fazer consulta de cnpj e mocar dados a serem filtrados aqui.
 		public static function run($request, $response, $args) {
 			$cnpj = $args['cnpj'];
 			global $app;
