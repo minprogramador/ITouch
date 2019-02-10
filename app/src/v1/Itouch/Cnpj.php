@@ -10,7 +10,7 @@
 		public static function main($request, $response) {
 			global $app;
 			$container = $app->getContainer();
-			$container->logger->addInfo("Itouch\Cnpj::main linha 13");
+			$container->logger->addInfo("Itouch\Cnpj::main.linha.13");
 			$data = array('pagina' => 'consultar cnpj');
 
 			return $response->withJson($data);
@@ -22,7 +22,7 @@
 			global $app;
 
 			$container = $app->getContainer();
-			$container->logger->addInfo("Itouch\Cnpj::run linha 24");
+			$container->logger->addInfo("Itouch\Cnpj::run.linha.24");
 			$data = array('pagina' => 'consultar cnpj get', 'cnpj' => $cnpj);
 			
 			return $response->withJson($data);

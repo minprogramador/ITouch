@@ -7,7 +7,7 @@ class Cpf {
 	public static function main($request, $response) {
 		global $app;
 		$container = $app->getContainer();
-		$container->logger->Info("consulta cpf main");
+		$container->logger->Info("consulta.cpf.main");
 		$data = array('pagina' => 'consultar cpf main');
 
 		return $response->withJson($data);
@@ -19,7 +19,7 @@ class Cpf {
 		global $app;
 
 		$container = $app->getContainer();
-		$container->logger->info("consultar cpf");
+		$container->logger->info("consultar.cpf");
 		$data = array('pagina' => 'consultar cpf', 'cpf' => $cpf);
 
 		return $response->withJson($data);

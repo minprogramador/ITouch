@@ -11,7 +11,7 @@ $container['renderer'] = function ($c) {
 
 $container['notFoundHandler'] = function ($c) {
 	return function ($request, $response) use ($c) {
-	$c->logger->alert("acesso incomum !");
+	$c->logger->alert("acesso.incomum");
 
 	$response = new \Slim\Http\Response(404);
 		return $response->write("Page not found");
